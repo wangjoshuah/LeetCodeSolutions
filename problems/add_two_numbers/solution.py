@@ -4,8 +4,17 @@ class ListNode:
         self.val = x
         self.next = None
 
+    def __repr__(self):
+        return self.__str__()
+
     def __str__(self):
-        return str(self.next) + str(self.val)
+        if self.next is None:
+            return str(self.val)
+        else:
+            return str(self.next) + str(self.val)
+
+    def __eq__(self, other):
+        return self.val == other.val and self.next == other.next
 
 
 class Solution:
