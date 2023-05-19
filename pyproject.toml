@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "leet_code_solutions"
+version = "0.1.0"
+description = "Leet Code Solutions from wangjoshuah."
+authors = ["Josh Wang <josh@overtheshouldercoding.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.961"
+pre-commit = "^2.19.0"
+black = "^22.6.0"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
